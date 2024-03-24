@@ -155,6 +155,9 @@ ENC0	3mp_pron	ENC_PRON	-	pron	3	-	-	-	-	-	-	m	-	p	-
 ENC0	3ms_dobj	ENC_PRON	-	pron	3	-	-	-	-	-	-	m	-	s	-
 ENC0	3ms_poss	ENC_PRON	-	pron	3	-	-	-	-	-	-	m	-	s	-
 ENC0	3ms_pron	ENC_PRON	-	pron	3	-	-	-	-	-	-	m	-	s	-
+ENC0	mA_rel	ENC_PRON	-	pron_rel	-	-	-	-	-	-	-	-	-	-	-
+ENC0	ma_rel	ENC_PRON	-	pron_rel	-	-	-	-	-	-	-	-	-	-	-
+ENC0	man_rel	ENC_PRON	-	pron_rel	-	-	-	-	-	-	-	-	-	-	-
 ENC0	Ah_voc	ENC_PART	-	part_voc	-	-	-	-	-	-	-	-	-	-	-
 ENC0	lA_neg	ENC_PART	-	part_neg	-	-	-	-	-	-	-	-	-	-	-
 ENC0	mA_interrog	ENC_PART	-	part_interrog	-	-	-	-	-	-	-	-	-	-	-
@@ -162,9 +165,6 @@ ENC0	ma_interrog	ENC_PART	-	part_interrog	-	-	-	-	-	-	-	-	-	-	-
 ENC0	man_interrog	ENC_PART	-	part_interrog	-	-	-	-	-	-	-	-	-	-	-
 ENC0	mA_sub	ENC_PART	-	part_sub	-	-	-	-	-	-	-	-	-	-	-
 ENC0	ma_sub	ENC_PART	-	part_sub	-	-	-	-	-	-	-	-	-	-	-
-ENC0	mA_rel	ENC_PART	-	pron_rel	-	-	-	-	-	-	-	-	-	-	-
-ENC0	ma_rel	ENC_PART	-	pron_rel	-	-	-	-	-	-	-	-	-	-	-
-ENC0	man_rel	ENC_PART	-	pron_rel	-	-	-	-	-	-	-	-	-	-	-
 RAT	na	BASE	-	-	-	-	-	-	-	-	-	-	-	-	na
 RAT	y	BASE	-	-	-	-	-	-	-	-	-	-	-	-	y
 RAT	i	BASE	-	-	-	-	-	-	-	-	-	-	-	-	i

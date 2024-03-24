@@ -12,8 +12,12 @@ PRC1	PRT	PRC_VPAR	-	part_voc	-	-	-	-	-	-	-	-	-	-	-
 PRC1	PRT	PRC_VPAR	-	part_prog	-	-	-	-	-	-	-	-	-	-	-
 PRC1	PRT	PRC_VPAR	-	part_jus	-	-	-	-	-	-	-	-	-	-	-
 PRC1	PRT	PRC_VPAR	-	part_interrog	-	-	-	-	-	-	-	-	-	-	-
+PRC1	PRT	PRC_VPAR	-	part_sub	-	-	-	-	-	-	-	-	-	-	-
+PRC1	PRT	PRC_VPAR	-	part_rc	-	-	-	-	-	-	-	-	-	-	-
 PRC0	PRT	PRC_DET	-	part_neg	-	-	-	-	-	-	-	-	-	-	-
 PRC0	PRT	PRC_DET	-	part	-	-	-	-	-	-	-	-	-	-	-
+PRC0	#NULL#	PRC_DET	-	part_det	-	-	-	-	-	-	-	-	-	-	-
+PRC0	#NULL#	PRC_DET	-	-	-	-	-	-	-	-	-	-	-	-	-
 POS	NOM	BASE	-	noun	-	-	-	-	-	-	-	-	-	-	-
 POS	NOM	BASE	-	noun_num	-	-	-	-	-	-	-	-	-	-	-
 POS	PROP	BASE	-	noun_prop	-	-	-	-	-	-	-	-	-	-	-
@@ -25,6 +29,7 @@ POS	NOM	BASE	-	adv	-	-	-	-	-	-	-	-	-	-	-
 POS	NOM	BASE	-	adv_interrog	-	-	-	-	-	-	-	-	-	-	-
 POS	NOM	BASE	-	adv_rel	-	-	-	-	-	-	-	-	-	-	-
 POS	VRB	BASE	-	verb	-	-	-	-	-	a	-	-	-	-	-
+POS	VRB	BASE	-	verb	-	-	-	-	-	na	-	-	-	-	-
 POS	PRT	BASE	-	verb_pseudo	-	-	-	-	-	a	-	-	-	-	-
 POS	VRB-PASS	BASE	-	verb	-	-	-	-	-	p	-	-	-	-	-
 POS	NOM	BASE	-	pron	-	-	-	-	-	-	-	-	-	-	-
@@ -56,4 +61,8 @@ POS	FOREIGN	BASE	-	latin	-	-	-	-	-	-	-	-	-	-	-
 POS	FOREIGN	BASE	-	foreign	-	-	-	-	-	-	-	-	-	-	-
 POS	PNX	BASE	-	punc	-	-	-	-	-	-	-	-	-	-	-
 ENC0	NOM	ENC_PRON	-	pron	-	-	-	-	-	-	-	-	-	-	-
+ENC0	NOM	ENC_PRON	-	pron_rel	-	-	-	-	-	-	-	-	-	-	-
 ENC0	PRT	ENC_PART	-	part_neg	-	-	-	-	-	-	-	-	-	-	-
+ENC0	PRT	ENC_PART	-	part_sub	-	-	-	-	-	-	-	-	-	-	-
+ENC0	PRT	ENC_PART	-	part_interrog	-	-	-	-	-	-	-	-	-	-	-
+ENC0	PRT	ENC_PART	-	part_voc	-	-	-	-	-	-	-	-	-	-	-
