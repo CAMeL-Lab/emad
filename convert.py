@@ -1,8 +1,8 @@
 import conv_from_EMAD, conv_to_EMAD, EMAD
 from tools import driver, parse_tag
 
-input_tagset = "BW"
-output_tagset = "CATiB6"
+input_tagset = "CATiB6"
+output_tagset = "BW"
 mismatch_file = f"mismatch_log_{input_tagset}_{output_tagset}.txt"
 error_file = f"error_log_{input_tagset}_{output_tagset}.txt"
 logs_path = "./log"
@@ -13,6 +13,8 @@ def main():
     input_map_driver = driver.setup_driver(input_tagset)
     output_map_driver = driver.setup_driver(output_tagset)
 
+    memoize = {}
+
     with open("./data/parallel/uniq_data.par", "r") as f:
         count, true_count, error_count, false_count = 0, 0, 0, 0
         flag = False
@@ -21,8 +23,11 @@ def main():
             #print(line)
 
             tags["BW"], tags["MADA"], tags["CATiB6"] = split_line(line)
-        
-            output_tags = convert(tags[input_tagset], input_map_driver, output_map_driver)
+
+            if not tags[input_tagset] in memoize.keys():
+                memoize[tags[input_tagset]] = convert(tags[input_tagset], input_map_driver, output_map_driver)
+            output_tags = memoize[tags[input_tagset]]
+
             #print(output_tags)
             if output_tags is None or output_tags == []:
                 error_count += 1
@@ -81,7 +86,8 @@ def output_matches(output, expected):
 
         for val in val_list:
             for tag in expected:
-                if feat in tag:
+                if feat in tag and tag[feat] != "#NULL#":
+
                     if tag[feat]==val or val == "#VAL#" or (tag[feat] in ['na', 'no'] and val in ['na', 'no']):
                         flag = True
                     

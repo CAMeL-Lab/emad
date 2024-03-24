@@ -57,12 +57,11 @@ def convert_rows_to_subtags(map_rows):
             if value != '-':
                 subtag[EMAD_feat] = value
         
-        if subtag != {}:
-            EMAD_cat = row['EMAD_cat']
+        EMAD_cat = row['EMAD_cat']
 
-            if EMAD_cat not in subtags.keys():
-                subtags[EMAD_cat] = []
-            subtags[EMAD_cat].append(subtag)
+        if EMAD_cat not in subtags.keys():
+            subtags[EMAD_cat] = []
+        subtags[EMAD_cat].append(subtag)
     
     return subtags
 

@@ -54,6 +54,8 @@ def get_feat_val_dicts(parsed_tag, map_driver):
     for feat in map_driver['features']:
         if m := re.search(f"<{feat}>(?P<val>.*)</{feat}>", parsed_tag):
             feat_val_dict[feat] = m['val']
+        else:
+            feat_val_dict[feat] = '#NULL#'
     return feat_val_dict
 
 def parse(input_tag, map_driver):
